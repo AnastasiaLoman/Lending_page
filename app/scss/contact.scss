@@ -1,0 +1,142 @@
+.contact{
+   background: no-repeat center url("../img/bg-2.jpg") #000;
+   background-size: cover;
+   position: relative;
+   text-align: center;
+padding-bottom: 70px;
+@media (max-width: 480px){
+padding-bottom: 30px;
+}
+   &::before{
+      content: "";
+      background-color: rgba($color: #000, $alpha: 0.7);
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+position: absolute;
+   }
+}
+.contact__title{
+   font-family: 'Playfair Display', 'Arial', sans-serif;
+   font-size: 58px;
+font-weight: 500;
+line-height: 82px;
+letter-spacing: 0.72px;
+padding: 100px 30px 40px;
+@media (max-width: 830px){
+   font-size: 48px;
+}
+@media (max-width: 710px){
+   font-size: 36px;
+   padding-top: 50px;
+   padding-bottom: 10px;
+}
+@media (max-width: 620px){
+   font-size: 30px;
+
+}
+@media (max-width: 480px){
+   font-size: 24px;
+   padding: 30px 15px 20px;
+   line-height: 28px;
+}
+@media (max-width: 390px){
+   font-size: 20px;
+
+
+}
+}
+
+.contact__input{
+border: 2px solid #fff;
+background-color: transparent;
+padding: 20px;
+width: 600px;
+text-align: center;
+color: #ffffff;
+font-size: 24px;
+text-transform: uppercase;
+@media (max-width: 830px){
+   padding: 15px;
+width: 400px;
+   font-size: 18px;
+}
+@media (max-width: 710px){
+   font-size: 16px;
+      padding: 8px;
+width: 400px;
+   padding-bottom: 10px;
+}
+@media (max-width: 480px){
+   font-size: 14px;
+      padding: 8px;
+width: 300px;
+
+}
+@media (max-width: 390px){
+   font-size: 12px;
+      padding: 8px;
+width: 220px;
+
+}
+
+&::placeholder{
+   color: #ffffff;
+font-size: 30px;
+text-transform: uppercase;
+@media (max-width: 830px){
+  
+   font-size: 18px;
+}
+
+@media (max-width: 710px){
+   font-size: 16px;
+
+
+}
+@media (max-width: 480px){
+   font-size: 14px;
+}
+@media (max-width: 390px){
+   font-size: 12px;
+
+}
+}
+}
+
+.contact__btn{
+   @include btn($color:$akcent);
+ margin: 60px auto 0px;
+  font-size: 26px;
+  @media (max-width: 830px){
+  
+   font-size: 18px;
+}
+@media (max-width: 710px){
+   font-size: 16px;
+padding: 10px;
+margin-top: 20px;
+
+}
+@media (max-width: 480px){
+   font-size: 14px;
+      padding: 8px 11px;
+}
+   &:hover{
+      @include btn($color:lighten($akcent, 15%));
+      font-size: 26px;
+  @media (max-width: 830px){
+  
+   font-size: 18px;
+}
+@media (max-width: 710px){
+   font-size: 16px;
+padding: 10px;
+}
+@media (max-width: 480px){
+   font-size: 14px;
+      padding: 8px 11px;
+}
+   }
+}

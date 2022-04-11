@@ -1,0 +1,21 @@
+$akcent: #e59205;
+$main: #fff;
+$add:  #a4a8bc;
+$reserv: #FCD95C;
+$title: #6e7498;
+
+@mixin btn($color: rgba($color: #000000, $alpha: 0.45), $border: transparent) {
+color: $main;
+font-family: 'Raleway', 'Arial', sans-serif;
+font-size: 30px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 0.3px;
+border: 2px solid $border;
+background-color: $color;
+text-align: center;
+cursor: pointer;
+display: block;
+padding: 20px 45px;
+transition-duration: 500ms;
+}

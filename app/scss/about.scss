@@ -1,0 +1,141 @@
+.about__slider{
+  background-color: #000;
+  position: relative; 
+  height: 100vh;
+   &-item{
+    height: 100vh;
+       background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    &::before{
+      content: "";
+      background-color: rgba($color: #000, $alpha: 0.8);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+    }
+   }
+   .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;   
+    margin-top: -15px;
+      border: none;
+      color: rgb(255, 255, 255);
+cursor: pointer;
+  }
+  .slick-prev{
+      left: 20px;
+      background: url("../img/arrow_left.svg") 0 0 /100% no-repeat;
+      // fill: #fff;
+    }
+    .slick-next{
+      right: 20px;
+      background: url("../img/arrow_right.svg") 0 0 /100% no-repeat;
+    }
+    .slick-dots{
+      position: absolute;
+      bottom: 20px;
+      left: calc(50% - 60px);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      li{
+        list-style: none;
+      margin: 0px 10px;
+      
+
+      }
+      .slick-active{
+        button{
+          background-color: $akcent;
+        }
+      }
+      button{
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        border-color: transparent;
+      }
+    }
+}
+
+
+.about__slider-item__info{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+    @media (max-width: 645px){
+          left: 15px;
+        }
+         @media (max-width: 485px){
+          left: 5px;
+        }
+      &-title{
+        font-family: 'Playfair Display', 'Arial', sans-serif;
+        font-size: 64px;
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: 0.72px; 
+        padding-right: 30px;
+        position: relative;
+        &::after{
+          content: "";
+          position: absolute;
+          height: 2px;
+        
+          width: 100px;
+          background-color: $akcent;
+        left:  0;
+          top: 100%;
+        }
+        @media (max-width: 1100px){
+          font-size: 56px;
+        }
+         @media (max-width: 645px){
+          font-size: 48px;
+        }
+               @media (max-width: 485px){
+          font-size: 36px;
+        }
+                      @media (max-width: 360px){
+          font-size: 30px;
+
+        }
+
+       }
+  
+       &-text{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0.24px;
+        padding:  20px 30px 20px 0px;
+        @media (max-width: 1100px){
+          font-size: 18px;
+          line-height: 32px;
+        }
+        @media (max-width: 645px){
+          font-size: 16px;
+          line-height: 20px;
+        }
+                       @media (max-width: 485px){
+          font-size: 14px;
+        }
+                               @media (max-width: 360px){
+          font-size: 12px;
+        }
+       }
+     }
+  
+

@@ -1,0 +1,228 @@
+$pasta: #fcb824;
+$sous:#fa7614;
+$meat: #f5310e;
+$green:#4aaa2b;
+
+
+.ingredients{
+   background-color: $main;
+   .ingredients__wrap{
+      background: no-repeat 0% 90% url("../img/pasta.png") ;
+      @media (max-width:720px){
+         background-position: -50% 100%;
+      }
+      @media (max-width:600px){
+         background-position: 40% 105%;
+      }
+   }
+   &:hover{
+      .ingredients__item{
+         span{
+            @media (min-width:720px){
+               transition: 2s;
+               opacity: 0;
+                  }
+         }
+      }
+   }
+}
+.ingredients__title{
+font-family: 'Playfair Display', 'Arial', sans-serif;
+font-size: 72px;
+font-weight: 500;
+line-height: 48px;
+font-style: italic;
+letter-spacing: 0.72px; 
+text-align: center;
+padding: 50px 20px 0;
+color: $title;
+@media (max-width:1065px){
+   font-size: 64px;
+}
+@media (max-width:875px){
+   font-size: 56px;
+}
+@media (max-width:425px){
+   font-size: 46px;
+}
+@media (max-width:390px){
+   font-size: 36px;
+}
+}
+
+.ingredients__text{
+font-size: 24px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0.24px;
+text-align: center;
+padding: 50px 150px;
+color: $add;
+@media (max-width:1065px){
+   font-size: 20px;
+   line-height: 38px;
+   padding: 50px 120px;
+}
+@media (max-width:920px){
+   font-size: 18px;
+   line-height: 28px;
+   padding: 50px 70px;
+}
+@media (max-width:720px){
+   padding: 50px 20px;
+}
+@media (max-width:425px){
+   line-height: 25px;
+   font-size: 16px;
+   padding: 20px 10px;
+
+
+}
+}
+
+.ingredients__list{
+   padding-bottom: 200px;
+   margin: 0;
+   position: relative;
+   overflow: hidden;
+   @media (max-width:863px){
+      padding-bottom: 170px;
+   }
+   @media (max-width:600px){
+      padding-bottom: 100px;
+      padding-top: 30px;
+   }
+   .ingredients__item{
+    font-size: 24px;
+   font-weight: 400;
+   line-height: 32px;
+   letter-spacing: 0.24px;
+   position: relative; 
+   margin-bottom: 24px;
+   @media (max-width:1065px){
+      font-size: 20px;
+      line-height: 26px;
+
+   }
+   @media (max-width:935px){
+      font-size: 16px;
+      line-height: 22px;
+   }
+     
+   &::before{
+      content: "";
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+bottom: -10px;
+left: 0px;
+z-index: 100;
+@media (max-width:720px){
+display: none;
+}
+   }
+&:nth-child(1){
+   left: 375px;
+   top: 40px;
+   margin-right: 700px;
+   &::before{
+   background-color: $pasta;
+   }
+   @media (max-width:1200px){
+      margin-right: 400px;
+   }
+   @media (max-width:720px){
+      top: 0;
+      left: 0;
+      margin-right: 0;
+}
+}
+&:nth-child(2){
+   left: 430px;
+   top: 250px;
+   margin-right: 840px;
+   &::before{
+   background-color:$green ;
+   }
+   @media (max-width:1200px){
+      margin-right: 450px;
+   }
+   @media (max-width:720px){
+      top: 0;
+      left: 0;
+      margin-right: 0;
+}
+
+}
+&:nth-child(3){
+   left: 290px;
+   top: -50px;
+   margin-right: 310px;
+   @media (max-width:720px){
+      top: 0;
+      left: 0;
+      margin-right: 0;
+}
+
+   &::before{
+   background-color:$sous ;
+   }
+
+}
+&:nth-child(4){
+   left: 480px;
+   top: -40px;
+   margin-right: 680px;
+   @media (max-width:720px){
+      top: 0;
+      left: 0;
+      margin-right: 0;
+}
+
+   &::before{
+   background-color: $meat ;
+   }
+   @media (max-width:1200px){
+      margin-right: 500px;
+   }
+}
+span{
+   background-color:rgba($color: #000, $alpha: 0.75);
+   border-radius: 25px;
+   padding: 15px 10px 15px 45px;
+z-index: 1;
+display: block;
+   text-align: left;
+   opacity: 1;
+   transition-property: opacity;
+   transition: 2s;
+   @media (max-width:720px){
+      opacity: 1;
+      text-align: center;
+      padding: 15px 10px;
+   }
+
+}
+&:hover{
+   &:nth-child(1)::before{
+      background-color: darken($pasta,8%);
+   }
+   &:nth-child(2)::before{
+      background-color: darken($green,8%);
+   }
+   &:nth-child(3)::before{
+      background-color: darken($sous,8%);
+   }
+   &:nth-child(4)::before{
+      background-color: darken($meat,8%);
+   }
+   span{
+      opacity: 1;
+   }
+}
+
+   }
+ 
+      }

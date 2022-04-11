@@ -1,0 +1,145 @@
+.footer{
+color: $add;
+font-size: 16px;
+font-weight: 400;
+}
+
+.footer__top{
+   display: flex;
+   justify-content: space-between;
+padding: 15px 0;
+   @media(max-width: 360px){
+      padding: 10px 0;
+}
+}
+
+.footer__nav{
+ border-left: 1px solid $add;
+}
+
+.footer__nav-item{
+   font-weight: 400;
+   @media(max-width: 350px){
+font-size: 14px;
+}
+   @media(max-width: 330px){
+font-size: 12px;
+}
+   a{
+      padding: 10px 10px 10px 20px;
+text-transform: uppercase;
+letter-spacing: 1px;
+   color: $add;
+   @media(max-width: 360px){
+      padding: 10px 5px 10px 5px;
+}
+   &:hover{
+      color: darken($add, $amount: 15%);
+   }
+   }
+}
+// .footer__contact{
+//    text-align: left;
+// }
+
+.footer__contact-title{
+   font-weight: 700;
+   padding: 15px 15px 20px 0px;
+   color: lighten($color: $add, $amount: 15%);
+   text-align-last: left;
+
+}
+
+.footer__contact-subtitle{
+   color: lighten($color: $add, $amount: 15%);
+   padding: 0px 25px 10px 0px;
+   a{
+      color: $add;
+      font-weight: 400;
+      &:hover{
+         color: darken($add, $amount: 15%);
+      }
+   }
+}
+
+.footer__social{
+   text-align: center;
+   padding-top: 10px;
+   min-height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   a{
+margin: 0px 5px;
+min-width: 40px;
+@media(max-width: 400px){
+  margin: 0px 5px;
+}
+@media(max-width: 350px){
+margin: 0px 1px;
+}
+&:first-child
+{
+margin-left: 0;
+}
+   }
+
+}
+
+.footer__social-facebook, .footer__social-insta, .footer__social-twitter, .footer__social-telegram{
+
+    fill: $add;
+   :hover{
+      transition-duration: 400ms;
+      height: 35px;
+      width: 35px;
+   } 
+
+}
+
+.footer__social-facebook{
+  :hover{
+      fill: rgb(115, 115, 245);
+   }     
+}
+
+.footer__social-insta{
+   :hover{
+       fill: rgb(230, 167, 221);
+    }     
+ }
+
+ .footer__social-twitter{
+   :hover{
+       fill: rgb(138, 188, 211);
+    }     
+ }
+
+ .footer__social-telegram{
+   :hover{
+       fill: rgb(107, 166, 243);
+    }     
+ }
+
+.footer__botom{
+   padding: 10px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   font-size: 14px;
+   border-top: 1px solid $add;
+   a{
+      color: $add;
+      &:hover{
+         color: darken($add, $amount: 15%);
+      }
+      }
+}
+// .footer__botom-icon, .footer__botom-rights{
+// }
+
+.footer__contct-links{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
